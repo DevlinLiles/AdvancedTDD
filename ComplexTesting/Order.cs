@@ -12,13 +12,12 @@ namespace ComplexTesting
         private readonly IPaymentService _paymentService;
         private double _total;
         private double _taxRate;
-        private ICollection<double> _items;
+        private ICollection<double> _items = new List<double>();
 
         public Order(IPaymentService paymentService)
         {
             _paymentService = paymentService;
             _taxRate = 1.0825;
-            _total = _items.Sum() * _taxRate;
         }
 
         public void AddItemToOrder(double price)
@@ -28,6 +27,7 @@ namespace ComplexTesting
 
         public Boolean Checkout()
         {
+            _total = _items.Sum() * _taxRate;
             return _paymentService.ValidatePayment(_total);
         }
     }
