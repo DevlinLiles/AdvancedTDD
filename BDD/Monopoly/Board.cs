@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +10,7 @@ namespace BDD.Monopoly
     {
         public Board()
         {
-            Squares = new Square[]
+            Squares = new[]
             {
                 new GoSquare(),
                 new Square("2"),
@@ -62,59 +61,5 @@ namespace BDD.Monopoly
         }
 
         public Square[] Squares { get; set; }
-    }
-
-    public class GoSquare : Square
-    {
-        public GoSquare() : base("Go") { }
-
-        public override void PassBy(Player player)
-        {
-            player.Money += 200;
-            base.PassBy(player);
-        }
-    }
-
-    public class Square
-    {
-        public string Name { get; set; }
-        public Square Next { get; set; }
-
-        public Square(string name)
-        {
-            Name = name;
-        }
-
-        public virtual void PassBy(Player player)
-        {
-            
-        }
-
-        public virtual void LandOn(Player player)
-        {
-        }
-    }
-
-    public class Player
-    {
-        public void Move(Dice dice)
-        {
-            var places = dice.Roll();
-            for (int i = 0; i < places; i++)
-            {
-                Location = Location.Next;
-            }
-        }
-        public Square Location { get; set; }
-        public int Money { get; set; }
-    }
-
-    public class Dice
-    {
-        private static Random _random = new Random();
-        public virtual int Roll()
-        {
-            return _random.Next(1, 7) + _random.Next(1, 7);
-        }
     }
 }

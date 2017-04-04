@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDD", "BDD\BDD.csproj", "{D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDD.Tests", "BDD.Tests\BDD.Tests.csproj", "{7311F6A5-448B-46EF-B4F1-D577018D86EB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Microservices", "5 - Microservices", "{A9E0580A-F90B-4478-B5A3-08CAD223D796}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Legacy Code", "6 - Legacy Code", "{7570F7B3-97D9-4A19-A698-49DEBEBAC99E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
