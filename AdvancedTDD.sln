@@ -31,6 +31,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Microservices", "5 - Mi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Legacy Code", "6 - Legacy Code", "{7570F7B3-97D9-4A19-A698-49DEBEBAC99E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDAir", "TDDAir\TDDAir.csproj", "{A6F1FBFB-E1B6-4B41-B475-62EF8FDD471F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDAir.Tests", "TDDAir.Tests\TDDAir.Tests.csproj", "{A37B24F4-FAD0-471E-8A38-A7FCF65A2A6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{0CC3159B-1936-424D-951D-2AC5C4EF9478}"
+	ProjectSection(SolutionItems) = preProject
+		lib\TechTalk.SpecFlow.dll = lib\TechTalk.SpecFlow.dll
+		lib\TechTalk.SpecFlow.pdb = lib\TechTalk.SpecFlow.pdb
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +79,14 @@ Global
 		{7311F6A5-448B-46EF-B4F1-D577018D86EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7311F6A5-448B-46EF-B4F1-D577018D86EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7311F6A5-448B-46EF-B4F1-D577018D86EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F1FBFB-E1B6-4B41-B475-62EF8FDD471F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F1FBFB-E1B6-4B41-B475-62EF8FDD471F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F1FBFB-E1B6-4B41-B475-62EF8FDD471F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F1FBFB-E1B6-4B41-B475-62EF8FDD471F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A37B24F4-FAD0-471E-8A38-A7FCF65A2A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A37B24F4-FAD0-471E-8A38-A7FCF65A2A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A37B24F4-FAD0-471E-8A38-A7FCF65A2A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A37B24F4-FAD0-471E-8A38-A7FCF65A2A6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,5 +100,7 @@ Global
 		{6839CD2D-82D3-4AE1-8A74-7366F57B82FF} = {AA368313-D1BE-4FCB-B6C2-CF56FBB40456}
 		{D30A9116-2535-4E9C-A67B-EC24931C88A1} = {91E7026F-DC96-457B-B58C-88D1BAF36E60}
 		{7311F6A5-448B-46EF-B4F1-D577018D86EB} = {91E7026F-DC96-457B-B58C-88D1BAF36E60}
+		{A6F1FBFB-E1B6-4B41-B475-62EF8FDD471F} = {A9E0580A-F90B-4478-B5A3-08CAD223D796}
+		{A37B24F4-FAD0-471E-8A38-A7FCF65A2A6E} = {A9E0580A-F90B-4478-B5A3-08CAD223D796}
 	EndGlobalSection
 EndGlobal
